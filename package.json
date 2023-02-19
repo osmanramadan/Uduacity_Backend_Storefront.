@@ -13,7 +13,7 @@
         "jasmine": "jasmine",
         "resetdb": "db-migrate reset && db-migrate up",
         "test1": "npm run resetdb && npm run build && npm run jasmine",
-        "test2": "ENV=test && npx tsc && db-migrate --env test up && jasmine && db-migrate db:drop test"
+        "test2": "setx var NODE_ENV=test && npx tsc && db-migrate --env test up && jasmine && db-migrate db:drop test"
     },
     "author": "osman",
     "license": "ISC",
