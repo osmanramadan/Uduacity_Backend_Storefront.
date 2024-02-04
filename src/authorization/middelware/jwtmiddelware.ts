@@ -12,13 +12,11 @@ const verify:RequestHandler = async (req:express.Request, res:express.Response, 
         const authorizationHeader = req.headers.authorization as string;
         const token = authorizationHeader.split(' ')[1];
         jwt.verify(token, TOKEN_SECRET);
-        next();    
+        next();
     } catch {
         res.status(401);
         res.json({access:"forbidden"});
     }
 
-
-
 };
- export default verify;
+export default verify;

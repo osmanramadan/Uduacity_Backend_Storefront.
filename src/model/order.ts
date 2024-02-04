@@ -30,7 +30,8 @@ export class Order {
         throw new Error(`Could not find order with ${userid}. Error: ${err}`);
     }
   }
-
+  
+  
   async create(o: order): Promise<order> {
       try {
     const sql = 'INSERT INTO orders (user_id,order_status) VALUES ($1, $2) RETURNING *';

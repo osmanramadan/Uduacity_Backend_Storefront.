@@ -16,5 +16,4 @@ orders.delete('/delete/:id', verify,ordercontroller.delete);
 orders.put('/updateorderstatus', verify, ordercontroller.updateorderstatus);
 orders.put('/updateproductsoforder', verify, ordercontroller.updateproductsoforder);
 
-
 export default orders;

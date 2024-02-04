@@ -4,14 +4,13 @@ import cors from 'cors';
 import routes from './routes';
 
 const app: express.Application = express();
-const port = 3000;
+const port = 4000;
 const corsOptions = {
   origin: 'http://localhost:3000',
   optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
-
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
