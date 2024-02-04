@@ -8,7 +8,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const routes_1 = __importDefault(require("./routes"));
 const app = (0, express_1.default)();
-const port = 3000;
+const port = 4000;
 const corsOptions = {
     origin: 'http://localhost:3000',
     optionsSuccessStatus: 200

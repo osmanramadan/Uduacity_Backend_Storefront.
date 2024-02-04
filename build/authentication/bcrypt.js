@@ -26,14 +26,6 @@ class Cipher {
                 return false;
             }
         };
-        // decrypt=async (u:user,password:string):Promise<boolean>=>{
-        //     const re=bcrypt.compareSync(password + pepper, u.upassword as string)
-        //     console.log(re)
-        //     if(re){  
-        //         return true
-        //     }
-        //     return false
-        //     }
     }
 }
 exports.default = Cipher;

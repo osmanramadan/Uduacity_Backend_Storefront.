@@ -26,7 +26,7 @@ if (NODE_ENV === 'test') {
 }
 
 if (NODE_ENV === 'dev') {
-pool = new Pool({
+    pool = new Pool({
         host: POSTGRES_HOST,
         database: DEV_POSTGRES_DB,
         user: POSTGRES_USER,

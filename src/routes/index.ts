@@ -9,15 +9,11 @@ routes.use('/users', users);
 routes.use('/orders', orders);
 routes.use('/products', products);
 
-
 routes.get('/', (_req:express.Request, res:express.Response)=>{
 res.status(200);
 res.send("this main page of routes");
 
 });
-
-
-
 
 export default routes;
 
